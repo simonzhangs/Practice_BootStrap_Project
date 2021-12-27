@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用样式-按钮</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 1.按钮 
+            ①样式：基础样式 .btn 
+                附加样式：
+                .btn-danger .btn-success .btn-warning 
+                .btn-info btn-default .btn-link
+            通过按钮样式可以设置其他元素为按钮效果
+            设置按钮的大小  .btn-lg .btn-sm .btn.xs
+            按钮禁用
+                添加disabled属性,真正禁用元素
+                添加.disabled类，样式上禁用，实际上并没有禁用
+    -->
+    <!-- 按钮 .btn 
+    .btn-danger .btn-success .btn-warning 
+    .btn-info btn-default .btn-link -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <button class="btn">按钮</button>
+                <button class="btn btn-danger">按钮</button>
+                <button class="btn btn-success">按钮</button>
+                <button class="btn btn-warning">按钮</button>
+                <button class="btn btn-info">按钮</button>
+                <button class="btn btn-default">按钮</button>
+                <button class="btn btn-primary">按钮</button>
+                <button class="btn btn-link">按钮</button>
+            </div>
+        </div><br>
+        <!-- 设置其他标签为按钮效果 -->
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="#" class="btn btn-danger">a标签</a>
+                <span class="btn btn-success">span标签</span>
+                <div class="btn btn-info">div标签</div>
+            </div>
+        </div><br>
+        <!-- 设置按钮大小 .btn-lg .btn-sm .btn.xs -->
+        <div class="row">
+            <div class="col-sm-6">
+                <button class="btn btn-primary btn-xs">超小按钮</button>
+                <button class="btn btn-primary btn-ms">小按钮</button>
+                <button class="btn btn-primary">正常按钮</button>
+                <button class="btn btn-primary btn-lg">大按钮</button>
+            </div>
+        </div>
+        <!-- 按钮禁用 -->
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- .disabled类只是样式上禁止，按钮功能仍能触发 -->
+                <button class="btn btn-success disabled" onclick="alert('Hello')">按钮</button>
+                <!-- disabled属性是元素上禁止，按钮功能不可触发 -->
+                <button class="btn btn-success" disabled="disabled" onclick="alert('Hello')">按钮</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

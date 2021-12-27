@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用样式-列表、代码</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 1.去点列表 -->
+    <ul>
+        <li>无序项目列表1</li>
+        <li>无序项目列表2</li>
+        <li>无序项目列表3</li>
+    </ul>
+    <ul class="list-unstyled">
+        <li>无序项目列表1</li>
+        <li>无序项目列表2</li>
+        <li>无序项目列表3</li>
+    </ul>
+
+    <!-- 2.内联列表 -->
+        <ul class="list-inline">
+        <li>首页</li>
+        <li>bootstrap</li>
+        <li>联系我</li>
+    </ul>
+
+    <!-- 3.定义列表 内联-->
+    <dl class="dl-horizontal">
+        <dt>HTML 超文本标记语言</dt>
+        <dd>HTML被称为超文本标记语言，是一种标识性的语言。</dd>
+        <dt>测试标题不能超过160px的宽度，否则2个点</dt>
+        <dd>我在写一个水平定义列表的效果，我在写一个水平定义列表的效果</dd>
+    </dl>
+
+    <!-- 4.代码
+            <code>显示单行内联代码
+            <kbd>快捷键
+            <pre>多行代码，代码会保留原本的格式，包括回车
+                显示html代码，需要使用字符实体
+                长度超过指定值，可以添加滚动条
+    -->
+    <!-- 单行内联代码 -->
+    <code>this is a simple code in one line</code>
+    <br>
+    使用<kbd>ctrl</kbd>+<kbd>s</kbd>保存内容
+
+    <pre>
+    public class HelloWorld{
+        public static void main(string[] args){
+            System.out.printIn("Hello World!");
+        }
+    }
+    </pre>
+
+    <pre>
+        &lt;h2&gt;你好&lt;/h2&gt;
+    </pre>
+
+    <!-- 添加类名.pre-scrollable，当超过一定长度会添加滚动条 -->
+    <pre class="pre-scrollable">
+        <ol>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+        </ol>
+    </pre>
+</body>
+</html>

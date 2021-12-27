@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单布局</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 水平表单  .form-horizontal
+            向父<form>元素添加role="form"
+            把标签和控件放在一个带有class.form-group的<div>中；这是获取最佳间距所必需的
+            向所有的文本元素<input>、<textarea>和<select>添加class="form-control"
+    -->
+    <form action="#" class="form-horizontal" role="form">
+        <div class="row">
+            <h2 class="text-center">用户信息表</h2>
+            <div class="form-group">
+                    <label for="uname" class="control-label col-md-2">姓名:</label>
+                    <div class="col-md-8">
+                        <input type="text" id="uname" class="form-control" placeholder="请输入你的姓名">
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pwd" class="control-label col-md-2">密码：</label>
+                <div class="col-md-8">
+                    <input type="password" name="" id="pwd" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="control-label col-md-2">爱好</label>
+                <div class="col-md-8">
+                        <label for="" class="checkbox-inline"><input type="checkbox" name="hobby" id="">唱歌</label>
+                        <label for="" class="checkbox-inline"><input type="checkbox" name="hobby" id="">跳舞</label>              
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="control-label col-md-2">城市</label>
+                <div class="col-md-8">
+                    <select name="" id="" class="form-control">
+                        <option value="">北京</option>
+                        <option value="">上海</option>
+                        <option value="">武汉</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="remark" class="control-label col-md-2">简介</label>
+                <div class="col-md-8">
+                    <textarea name="" id="remark" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2 col-md-offset-6">
+                    <button class="btn btn-primary">提交</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- 内联表单
+            .form-inline
+    -->
+    <hr>
+    <form action="" class="form-inline">
+        <div class="col-md-8 col-md-offset-1">
+            <div class="form-group">
+                <label for="userName" class="control-label">姓名</label>
+                <input type="text" name="" id="userName" class="form-control" placeholder="请输入你的姓名">
+            </div>
+            <div class="form-group">
+                <label for="userPwd" class="control-label">密码</label>
+                <input type="text" name="" id="userPwd" class="form-control" placeholder="请输入你的密码">
+            </div>
+            <div class="form-group">
+                <button class="btn btn=primary">提交</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

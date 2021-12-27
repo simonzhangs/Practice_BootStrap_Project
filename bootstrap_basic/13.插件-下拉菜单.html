@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插件-下拉菜单</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- .dropdown	指定下拉菜单，下拉菜单都包裹在 .dropdown 里 -->
+    <div class="dropdown">
+        <!-- 使用button作为父菜单，使用类名：dropdown-toggle和自定义data-toggle属性 -->
+        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题
+            <!-- 设置下拉箭头 -->
+            <span class="caret"></span>
+        </button>
+
+        <!-- .dropdown-menu	创建下拉菜单 -->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <!-- .dropdown-header	下拉菜单中添加标题 -->
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation" class="active">
+                <a role="menuitem" tabindex="-1" href="#">Java</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+            </li>
+
+            <!-- .divider 下拉菜单中的分割线 -->
+            <li role="presentation" class="divider"></li>
+
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+            </li>
+        </ul>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

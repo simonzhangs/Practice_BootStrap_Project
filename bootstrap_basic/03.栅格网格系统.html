@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栅格网格系统</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- 1.列组合，一行可以放12个列-->
+    <div style="background-color: bisque;">4</div>
+    <div style="background-color: cadetblue;">8</div>
+    <hr>
+    <!-- 布局容器 -->
+    <div class="container">
+        <!-- 行 -->
+        <div class="row">
+            <!-- 列 -->
+            <div class="col-md-4 col-lg-4" style="background-color: bisque;">
+                4444
+            </div>
+            <div class="col-md-4 col-lg-8" style="background-color: cadetblue;">
+                8888
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-1" style="background-color: bisque;">4-1</div>
+            <div class="col-md-1" style="background-color: burlywood;">4-2</div>
+            <div class="col-md-1" style="background-color: cyan;">4-3</div>
+            <div class="col-md-1" style="background-color: darkkhaki;">4-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" style="background-color: bisque;">4444</div>
+            <div class="col-md-4" style="background-color: burlywood;">4444</div>
+            <div class="col-md-4" style="background-color: cyan;">4444</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" style="background-color: bisque;">6666</div>
+            <div class="col-md-6" style="background-color: burlywood;">6666</div>
+        </div>
+
+        <hr>
+        <!-- 当列数超过十二列，超出对应的div在下一行显示 -->
+        <div class="row">
+            <div class="col-md-4" style="background-color: bisque;">4444</div>
+            <div class="col-md-4" style="background-color: burlywood;">4444</div>
+            <div class="col-md-5" style="background-color: cyan;">5555</div>
+        </div>
+
+        <!-- 2.列偏移，总长度加上偏移不能超过12列，否则会跳行 -->
+        <hr>
+        <div class="row">
+            <div class="col-md-1" style="background-color: bisque;">1111</div>
+            <div class="col-md-1" style="background-color: burlywood;">1111</div>
+            <div class="col-md-1" style="background-color: cyan;">1111</div>
+            <div class="col-md-1 col-md-offset-1" style="background-color: darkkhaki;">1111-1</div>
+        </div>
+
+        <!-- 3.列排序，当前列浮动位置 -->
+        <hr>
+        <div class="row">
+            <div class="col-md-1" style="background-color: bisque;">1</div>
+            <div class="col-md-1 col-md-push-2" style="background-color: burlywood;">2</div>
+            <div class="col-md-1" style="background-color: cyan;">3</div>
+            <div class="col-md-1 col-md-pull-2" style="background-color: darkkhaki;">4</div>
+        </div>
+
+        <!-- 4.列嵌套 -->
+        <hr>
+        <div class="row">
+            <div class="col-md-6" style="background-color: bisque;">
+                <div class="row">
+                    <div class="col-md-1" style="background-color: firebrick;">1</div>
+                    <div class="col-md-5" style="background-color: blueviolet;">5</div>
+                </div>
+            </div>
+            <div class="col-md-6" style="background-color: burlywood;">6-列嵌套</div>
+        </div>
+        <hr>
+        
+        <!-- 5.不同分辨率屏幕响应式布局列数 -->
+        <div class="row">
+            <div class="col-md-3 col-xs-6" style="background-color: bisque;">1</div>
+            <div class="col-md-3 col-xs-6" style="background-color: burlywood;">2</div>
+            <div class="col-md-3 col-xs-6" style="background-color: cyan;">3</div>
+            <div class="col-md-3 col-xs-6" style="background-color: darkkhaki;">4</div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

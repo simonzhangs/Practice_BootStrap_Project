@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插件-导航、分页导航</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 定义导航元素，它们使用相同的标记和基类 .nav -->
+ 
+        <!-- 表格导航
+            以一个带有 class .nav 的无序列表开始；
+            添加 class .nav-tabs。 -->
+            <p>标签式的导航菜单</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">SVN</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">VB.Net</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">PHP</a></li>
+            </ul><br>
+
+        <!-- 胶囊式的导航菜单
+            水平导航
+                使用 class .nav-pills 
+            垂直导航
+                在使用 class .nav、.nav-pills 的同时使用 class .nav-stacked -->
+        
+            <p>基本的胶囊式/水平导航菜单</p>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">SVN</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">VB.Net</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">PHP</a></li>
+            </ul><br>
+
+            <p>基本的胶囊式/垂直导航菜单</p>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">SVN</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">VB.Net</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">PHP</a></li>
+            </ul><br>
+
+        <!-- 两端对齐    
+                .nav-justified，响应式导航栏，会随屏幕宽度自适应变化
+            禁用链接
+                添加了 .disabled class，则会创建一个灰色的链接，同时禁用了该链接的 :hover 状态 -->
+        <p>两端对齐的导航元素</p>
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">SVN</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">VB.Net</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">PHP</a></li>
+        </ul><br><br><br>
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">SVN</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">VB.Net</a></li>
+            <li><a href="#">Java</a></li>
+            <li class="disabled"><a href="#">PHP</a></li>
+        </ul><br>
+
+        <p>面包屑导航</p>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">2013</a></li>
+            <li class="active">十一月</li>
+        </ul>
+
+        <p>分页导航</p>
+        <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+
+        <p>翻页导航</p>
+        <ul class="pager">
+            <li><a href="#">上一页</a></li>
+            <li><a href="#">下一页</a></li>
+        </ul>
+        <ul class="pager">
+            <li class="previous"><a href="#">上一页</a></li>
+            <li class="next disabled"><a href="#">下一页</a></li>
+        </ul>
+    </div>
+</body>
+</html>

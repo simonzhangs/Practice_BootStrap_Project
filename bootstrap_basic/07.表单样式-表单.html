@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 表单控件 .form-control .input-lg(较大) .input-sm(较小) -->
+    
+    <!-- 1.输入框text -->
+    <div class="row">
+        <div class="col-sm-3">
+            <input type="text" name="" id="" class="form-control"> <br>
+            <input type="text" name="" id="" class="form-control input-lg"> <br>
+            <input type="text" name="" id="" class="form-control input-sm"> <br>
+        </div>
+    </div>
+
+    <!-- 2.下拉选择框 select 
+    多行选择设置：multiple="multiple" -->
+    <div class="row">
+        <div class="col-sm-3">
+            <select name="" id="" class="form-control">
+                <option value="">请选择城市</option>
+                <option value="北京">北京</option>
+                <option value="北京">上海</option>
+                <option value="北京">深圳</option>
+            </select><br>
+            <select name="" id="" class="form-control" multiple = "multiple">
+                <option value="">请选择城市</option>
+                <option value="北京">北京</option>
+                <option value="北京">上海</option>
+                <option value="北京">深圳</option>
+            </select><br>
+        </div>
+    </div>
+
+    <!-- 3.文本域 .form-control-->
+    <div class="row">
+        <div class="col-md-3">
+            <textarea name="" id="" class="form-control"></textarea>
+        </div>
+    </div>
+
+    <!-- 4.复选框 支持垂直、水平显示
+            垂直显示  div.checkbox
+            水平显示 label.checkbox-inline
+    -->
+    <!-- 复选框垂直显示 -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label for=""><input type="checkbox" name="hobby">唱歌</label>
+            </div>
+            <div class="checkbox">
+                <label for=""><input type="checkbox" name="hobby">跳舞</label>
+            </div>
+        </div>
+    </div>
+    <!-- 复选框水平显示 -->
+    <div class="row">
+        <div class="col-md-3">         
+            
+            <label for="" class="checkbox-inline"><input type="checkbox" name="hobby">唱歌</label>
+            
+            <label for="" class="checkbox-inline"><input type="checkbox" name="hobby">跳舞</label>        
+        </div>
+    </div>
+
+    <!-- 5.单选框 支持垂直、水平显示
+    垂直显示  div.radio
+    水平显示 label.radio-inline -->
+    <!-- 单选框垂直显示 -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="radio">
+                <label for=""><input type="radio" name="hobby">唱歌</label>
+            </div>
+            <div class="radio">
+                <label for=""><input type="radio" name="hobby">跳舞</label>
+            </div>
+        </div>
+    </div>
+    <!-- 单选框水平显示 -->
+    <div class="row">
+        <div class="col-md-3">         
+            
+            <label for="" class="radio-inline"><input type="radio" name="sex">male</label>    
+            <label for="" class="radio-inline"><input type="radio" name="sex">female</label>        
+        </div>
+    </div>
+</body>
+</html>
